@@ -25,9 +25,7 @@ def main():
     print("--")
     hospital.listar_funcionarios
     print("--")
-    # hospital.maior_salario
-
-
+    # hospital.maior_salariofghdfghdfghdfgh dfghdfgh
 
     #///////////////////////////////////////
     print("\nLista Funcionarios:")
