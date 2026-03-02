@@ -1,6 +1,7 @@
 # Atividade SISTEMA DE FUNCIONÁRIOS HOSPITALARES 
 DEV python Teste
 
+
 PARTE 1 – Classe Abstrata: Funcionario 
 Criar uma classe abstrata chamada Funcionario. 
 Atributos obrigatórios: 
@@ -18,6 +19,8 @@ Métodos concretos:
 • exibir_dados() 
 Observação: 
 A classe Funcionario não pode ser instanciada diretamente. 
+
+
 PARTE 2 – Classe Intermediária: FuncionarioSaude 
 Criar uma classe chamada FuncionarioSaude que herda de Funcionario. 
 Novo atributo: 
@@ -27,6 +30,8 @@ Novo método concreto:
 Importante: 
 Essa classe não deve implementar os métodos abstratos. 
 Ela continua sendo abstrata. 
+
+
 PARTE 3 – Classe Medico 
 Herda de FuncionarioSaude. 
 Atributos adicionais: 
@@ -35,6 +40,8 @@ Regras:
 • Bônus de 20% sobre o salário 
 • Implementar calcular_bonus() 
 • Implementar descricao_funcao() 
+
+
 PARTE 4 – Classe Enfermeiro 
 Herda de FuncionarioSaude. 
 Atributo adicional: 
@@ -43,6 +50,8 @@ Regras:
 • Bônus de 15% sobre o salário 
 • Implementar calcular_bonus() 
 • Implementar descricao_funcao() 
+
+
 PARTE 5 – Classe Administrativo 
 Herda diretamente de Funcionario. 
 Atributo adicional: 
@@ -51,6 +60,8 @@ Regras:
 • Bônus de 10% sobre o salário 
 • Implementar calcular_bonus() 
 • Implementar descricao_funcao() 
+
+
 PARTE 6 – Classe Hospital 
 Criar uma classe Hospital. 
 Atributo: 
@@ -62,6 +73,8 @@ Métodos:
 Observação: 
 Hospital não herda de Funcionario. 
 Ela apenas armazena objetos (composição). 
+
+
 DESAFIOS EXTRAS 
 • Impedir salário negativo 
 • Impedir bônus para funcionário inativo 
