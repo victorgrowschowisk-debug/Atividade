@@ -3,7 +3,7 @@ from Funcionario import Funcionario
 
 class FuncionarioSaude(Funcionario):
     def __init__(self, nome, salario, registro_conselho):
-        super().__init__(nome, salario,0)
+        super().__init__(nome, salario, 0)
         self.registro_conselho = registro_conselho
     
     def validar_registro(self):

@@ -9,11 +9,7 @@ from Hospital import Hospital
 def main():
     print("SISTEMA DE FUNCIONÁRIOS HOSPITALARES")
     
-    Lista = []
-    Lista.append (Enfermeiro("Maria",4000,1209,"UTI"))
-    Lista.append (Medico("Fernanda",20000,4108,"FISIO"))
-    Lista.append (Medico("Joao",15000,3809,"CARDIO"))
-    Lista.append (Administrativo("Joao",2840,"ALMOX"))
+    
 
     hospital = Hospital("HOP")
 
@@ -23,19 +19,22 @@ def main():
     hospital.adicionar_funcionario(Administrativo("Paty",2840,"ALMOX"))
     hospital.adicionar_funcionario(Enfermeiro("Marta",4000,4567,"Internacao"))
     print("--")
-    hospital.listar_funcionarios
+    hospital.listar_funcionarios()
     print("--")
+    print(hospital.folha_pagamento())
+    print("--")
+    print(hospital.maior_salario())
     # hospital.maior_salario
+    
+    lista = hospital.get_lista()
+    for item in lista:
+        if (item.nome == "Marta"):
+            print (item.setor)
 
 
 
-    #///////////////////////////////////////
-    print("\nLista Funcionarios:")
-    for item in Lista:
-        item.exibir_dados()
 
-    x = Enfermeiro("Maria",4000,1209,"UTI")
-    x.exibir_dados()
+
 
 
 main()
