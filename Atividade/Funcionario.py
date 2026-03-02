@@ -5,9 +5,11 @@ class Funcionario(ABC):
     def __init__(self,nome,salario,registro):
         self.nome = nome
         self.registro = registro
-        self.salario = salario
+        if salario >= 0 :
+            self.salario = salario
         self.ativo = True  
-    
+
+        
 
     @abstractmethod
     def calcular_bonus(self):
@@ -23,13 +25,16 @@ class Funcionario(ABC):
         self.salario = self.salario + aumento
     
     def desativar(self):
-        self.ativo = False
+        self.ativo = False 
     
     def salario_total(self):
         return self.salario + self.calcular_bonus()
     
     def exibir_dados(self):
-        print("Nome: ", self.nome)
+        print("Nome:", self.nome, 
+              "| Salário:", self.salario, 
+              "| Ativo:", self
+              )
 
 
 # • Impedir salário negativo 

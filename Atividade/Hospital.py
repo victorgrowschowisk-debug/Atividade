@@ -15,11 +15,16 @@ class Hospital:
         print("Lista")
         for item in self.lista_funcionarios:
             item.exibir_dados()
-        print("Lista")    
+
+    def get_lista(self):
+        return self.lista_funcionarios
 
     def folha_pagamento(self):
         return sum(item.salario_total() for item in self.lista_funcionarios)
     
     def maior_salario(self):
-         for item in self.lista_funcionarios:
-            item.salario
+        contador = 0 
+        for item in self.lista_funcionarios:
+            if item.salario_total() > contador:
+                contador = item.salario
+        return contador
